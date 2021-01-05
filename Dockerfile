@@ -6,9 +6,9 @@ RUN apt upgrade -y
 RUN apt install -y git
 
 #copy all files
-COPY ../src/nginx-files/ /etc/nginx/
+COPY src/nginx-files/ /etc/nginx/
 RUN mkdir -pv /var/www/lug-erkelenz.de/
-COPY ../src/hugo-files/ /hugo-files/
+COPY src/hugo-files/ /hugo-files/
 #COPY post/ /hugo-files/lug-erkelenz.de/content/post/
 
 #Add Hugo
@@ -17,7 +17,7 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSIO
 RUN tar -zxvf hugo.tar.gz
 RUN /hugo version
 
-RUN /hugo --config="/hugo-files/lug-erkelenz.de/config.toml" -s /hugo-files/lug-erkelenz.de/ -d /var/www/lug-erkelenz.de/
+RUN /hugo --config="/hugo-files/lug-erkelenz.de/config.yml" -s /hugo-files/lug-erkelenz.de/ -d /var/www/lug-erkelenz.de/
 
 EXPOSE 80
 
