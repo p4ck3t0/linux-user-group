@@ -1,5 +1,10 @@
 FROM nginx:latest
 
+# update container
+RUN apt update -y
+RUN apt upgrade -y
+RUN apt install -y git
+
 #copy all files
 COPY ../src/nginx-files/ /etc/nginx/
 RUN mkdir -pv /var/www/lug-erkelenz.de/
