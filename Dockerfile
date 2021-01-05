@@ -17,7 +17,7 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSIO
 RUN tar -zxvf hugo.tar.gz
 RUN /hugo version
 
-RUN /hugo --config="/hugo-files/lug-erkelenz.de/config.yml" -s /hugo-files/lug-erkelenz.de/ -d /var/www/lug-erkelenz.de/
+RUN /hugo -v --config="/hugo-files/lug-erkelenz.de/config.yml" -s /hugo-files/lug-erkelenz.de/ -d /var/www/lug-erkelenz.de/
 
 EXPOSE 80
 
