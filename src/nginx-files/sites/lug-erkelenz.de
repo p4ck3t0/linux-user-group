@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name lug-erkelenz.de www.lug-erkelenz.de;
+
+    root /var/www/lug-erkelenz.de/;
+
+    location / {
+        index index.html;
+    }
+}
