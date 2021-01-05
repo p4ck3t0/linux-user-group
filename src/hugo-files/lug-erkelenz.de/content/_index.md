@@ -4,7 +4,3 @@ title: "Home"
 ---
 Linux User Group in Erkelenz
 
-{{< ticks >}}
-Hello world
-{{< /ticks >}}
-

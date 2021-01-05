@@ -42,10 +42,7 @@ menu:
       weight: 2
     - name: Tags
       url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
+      weight: 3 
     - name: RSS
       url: /index.xml
       weight: 5
