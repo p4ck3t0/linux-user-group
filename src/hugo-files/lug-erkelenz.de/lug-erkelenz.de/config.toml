@@ -1,0 +1,5 @@
+baseURL = "lug-erkelenz.de"
+languageCode = "de-de"
+title = "LUG Erkelenz"
+
+theme = "cupper-hugo-theme"
