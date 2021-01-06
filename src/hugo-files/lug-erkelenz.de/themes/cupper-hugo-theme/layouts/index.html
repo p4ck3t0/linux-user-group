@@ -4,11 +4,14 @@
     {{ .Content }}
     {{ if site.Params.search }}
     {{ end }}
+    <h1>
+    	Current posts
+    </h1>
   <ul class="patterns-list" id="list">
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
     <li>
       <h2>
-        <a href="{{ .RelPermalink }}">
+        <a href="{.Permalink{}}">
           <svg
             class="bookmark"
             aria-hidden="true"
