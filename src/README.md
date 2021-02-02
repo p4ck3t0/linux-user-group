@@ -2,5 +2,8 @@
 
 - Summary
 - post üer sich selbst
-- post summary
+
+#Done
+- post summary 
 - Logo einfügen bzw. erstellen
+- creating/implementing favicons
