@@ -11,7 +11,7 @@
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
     <li>
       <h2>
-        <a href="{.Permalink{}}">
+        <a href="{{ .RelPermalink }}">
           <svg
             class="bookmark"
             aria-hidden="true"
@@ -23,6 +23,9 @@
           {{ .Title }}
         </a>
       </h2>
+      <div>
+                {{ .Summary }}
+      </div>
     </li>
     {{ end }}
   </ul>
