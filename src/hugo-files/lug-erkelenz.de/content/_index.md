@@ -1,8 +1,7 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
-title: "Home"
 ---
-Linux User Group in Erkelenz
+# <span style="color:blue">L</span>inux <span style="color:blue">U</span>ser <span style="color:blue">G</span>roup in <span style="color:blue">E</span>rkelenz
 
 - [Official Github Repository to this site](https://github.com/p4ck3t0/linux-user-group)
 - [English version below](#english)
