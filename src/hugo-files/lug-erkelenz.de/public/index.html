@@ -234,9 +234,9 @@
       <div class="main-and-footer">
         <div>
           
-  <main id="main">
-    <h1></h1>
-    <h1 id="span-stylecolorbluelspaninux-span-stylecolorblueuspanser-span-stylecolorbluegspanroup-in-span-stylecolorblueespanrkelenz"><span style="color:blue">L</span>inux <span style="color:blue">U</span>ser <span style="color:blue">G</span>roup in <span style="color:blue">E</span>rkelenz</h1>
+<main id="main">
+  <h1></h1>
+  <h1 id="span-stylecolorbluelspaninux-span-stylecolorblueuspanser-span-stylecolorbluegspanroup-in-span-stylecolorblueespanrkelenz"><span style="color:blue">L</span>inux <span style="color:blue">U</span>ser <span style="color:blue">G</span>roup in <span style="color:blue">E</span>rkelenz</h1>
 <ul>
 <li><a href="https://github.com/p4ck3t0/linux-user-group">Official Github Repository to this site</a></li>
 <li><a href="#english">English version below</a></li>
@@ -264,12 +264,8 @@ Due to the current Corona situation this is unfortunately not possible so we mee
 
 </div>
 
-
-    
-    
-    <h1>
-    	Current posts
-    </h1>
+  
+  <h1>Current posts</h1>
   <ul class="patterns-list" id="list">
     
     <li>
@@ -286,12 +282,10 @@ Due to the current Corona situation this is unfortunately not possible so we mee
           Test
         </a>
       </h2>
-      <div>
-                Hello Hallo ich bin Ruben
+      <div>Hello Hallo ich bin Ruben
 Das ist Adam
 Cool
-Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf statischen HTML-Dateien basieren, will ich eine Einführung in den Static Site Generator “Hugo” geben. Static Site Generatoren gibt es mittlerweile wie Sand am Meer. Einen Überblick kann man sich beispielsweise auf der Seite staticgen.com verschaffen. Hugo gefällt mir im Hinblick auf Geschwindigkeit und Einfachkeit allerdings am besten. Hervorzuheben ist außerdem die besonders einfache Installation: Zur Einrichtung wird einfach die passende Programmdatei als Executable heruntergeladen.
-      </div>
+Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf statischen HTML-Dateien basieren, will ich eine Einführung in den Static Site Generator “Hugo” geben. Static Site Generatoren gibt es mittlerweile wie Sand am Meer. Einen Überblick kann man sich beispielsweise auf der Seite staticgen.com verschaffen. Hugo gefällt mir im Hinblick auf Geschwindigkeit und Einfachkeit allerdings am besten. Hervorzuheben ist außerdem die besonders einfache Installation: Zur Einrichtung wird einfach die passende Programmdatei als Executable heruntergeladen.</div>
     </li>
     
     <li>
@@ -308,19 +302,38 @@ Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf stat
           Test2
         </a>
       </h2>
-      <div>
-                <h2 id="hello">Hello</h2>
+      <div><h2 id="hello">Hello</h2>
 <p>Hallo ich bin Ruben</p>
 <p>Das ist Adam</p>
 <p>Cool</p>
-<h2 id="test1">Test1</h2>
-      </div>
+<h2 id="test1">Test1</h2></div>
     </li>
     
   </ul>
+  <h1>Contact us</h1>
+  <input id="email" type="text" placeholder="Your email" />
+  <textarea id="textfield" placeholder="Your message"></textarea>
+  <button id="send-button" onclick="sendMail();">Send mail</button>
 </main>
 
-  </main>
+<script>
+  const socket = new WebSocket("ws://192.168.178.37:4253");
+
+  function sendMail() {
+    console.log("hehe");
+
+    var userEmail = document.querySelector("#email").value;
+    var userText = document.querySelector("#textfield").value;
+    
+    var sendMailData = {
+      email: email,
+      text: userText,
+    };
+
+    print(sendMailData);
+    socket.send(JSON.stringify(sendMailData));
+  }
+</script>
 
           <footer role="contentinfo">
   <div>
@@ -348,7 +361,7 @@ Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf stat
 
 <script src="/js/search.7aef046a0cc8b0c532f1d20087b920459bc868c936bb48a6ae221eceefca2d07.js"></script>
 
-<link rel="stylesheet" href="/css/search.fe0cd54a21628574bff49d721c827d1bb165ab56b0f22dd55ae78addbe61c309.css"></link>
+<link rel="stylesheet" href="/css/search.3f5ad939a1fed0405137763007218f0ce26d1c882119de1ea9ba98f47ad1fd60.css"></link>
 
 
 

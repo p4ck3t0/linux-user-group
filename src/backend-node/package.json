@@ -1,0 +1,18 @@
+{
+  "name": "LUG",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "is-reachable": "^5.0.0",
+    "nodemailer": "^6.4.16",
+    "ws": "^7.4.0"
+  },
+  "keywords": [],
+  "license": "ISC"
+}

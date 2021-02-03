@@ -24,9 +24,26 @@
     {{ end }}
   </ul>
   <h1>Contact us</h1>
-  <input id="search" type="text" placeholder="Your email" />
-  <textarea name="" id="textfield" placeholder="Your message"></textarea>
-  <button id="send-button">Send mail</button>
+  <input id="email" type="text" placeholder="Your email" />
+  <textarea id="textfield" placeholder="Your message"></textarea>
+  <button id="send-button" onclick="sendMail();">Send mail</button>
 </main>
 
+<script>
+  const socket = new WebSocket("ws://192.168.178.37:4253");
+
+  function sendMail() {
+    console.log("hehe");
+
+    var userEmail = document.querySelector("#email").value;
+    var userText = document.querySelector("#textfield").value;
+    
+    var sendMailData = {
+      email: email,
+      text: userText,
+    };
+
+    socket.send(JSON.stringify(sendMailData));
+  }
+</script>
 {{ end }}
