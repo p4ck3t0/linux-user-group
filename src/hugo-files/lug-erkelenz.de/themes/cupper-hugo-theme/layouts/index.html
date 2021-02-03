@@ -1,12 +1,8 @@
 {{ define "main" }}
-  <main id="main">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    {{ if site.Params.search }}
-    {{ end }}
-    <h1>
-    	Current posts
-    </h1>
+<main id="main">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }} {{ if site.Params.search }} {{ end }}
+  <h1>Current posts</h1>
   <ul class="patterns-list" id="list">
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
     <li>
@@ -23,13 +19,14 @@
           {{ .Title }}
         </a>
       </h2>
-      <div>
-                {{ .Summary }}
-      </div>
+      <div>{{ .Summary }}</div>
     </li>
     {{ end }}
   </ul>
+  <h1>Contact us</h1>
+  <input id="search" type="text" placeholder="Your email" />
+  <textarea name="" id="textfield" placeholder="Your message"></textarea>
+  <button id="send-button">Send mail</button>
 </main>
 
-  </main>
 {{ end }}

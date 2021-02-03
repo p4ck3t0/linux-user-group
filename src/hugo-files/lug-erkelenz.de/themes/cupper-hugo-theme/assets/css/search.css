@@ -6,3 +6,12 @@
   line-height: 1.6;
   font-size: 1.25rem;
 }
+
+#textfield {
+  height: 150px;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid;
+  line-height: 1.6;
+  font-size: 1.25rem;
+}

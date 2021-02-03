@@ -242,6 +242,26 @@
     
     <li>
       <h2>
+        <a href="/test/">
+          <svg
+            class="bookmark"
+            aria-hidden="true"
+            viewBox="0 0 40 50"
+            focusable="false"
+          >
+            <use xlink:href="#bookmark"></use>
+          </svg>
+          Test
+        </a>
+      </h2>
+      Hello Hallo ich bin Ruben
+Das ist Adam
+Cool
+Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf statischen HTML-Dateien basieren, will ich eine Einführung in den Static Site Generator “Hugo” geben. Static Site Generatoren gibt es mittlerweile wie Sand am Meer. Einen Überblick kann man sich beispielsweise auf der Seite staticgen.com verschaffen. Hugo gefällt mir im Hinblick auf Geschwindigkeit und Einfachkeit allerdings am besten. Hervorzuheben ist außerdem die besonders einfache Installation: Zur Einrichtung wird einfach die passende Programmdatei als Executable heruntergeladen.
+    </li>
+    
+    <li>
+      <h2>
         <a href="/test2/">
           <svg
             class="bookmark"
@@ -254,6 +274,11 @@
           Test2
         </a>
       </h2>
+      <h2 id="hello">Hello</h2>
+<p>Hallo ich bin Ruben</p>
+<p>Das ist Adam</p>
+<p>Cool</p>
+<h2 id="test1">Test1</h2>
     </li>
     
   </ul>
@@ -261,7 +286,11 @@
 
           <footer role="contentinfo">
   <div>
-   
+    <label for="themer">
+       <input type="checkbox" id="themer" class="vh">
+      
+      <span aria-hidden="true"></span>
+    </label>
   </div>
   
     Made with <a href="https://gohugo.io/">Hugo</a> in Erkelenz.

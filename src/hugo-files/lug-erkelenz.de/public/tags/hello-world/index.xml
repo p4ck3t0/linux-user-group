@@ -5,14 +5,31 @@
     <link>https://lug-erkelenz.de/tags/hello-world/</link>
     <description>Recent content in hello world on LUG Erkelenz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="https://lug-erkelenz.de/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <lastBuildDate>Tue, 02 Feb 2021 20:03:41 +0100</lastBuildDate><atom:link href="https://lug-erkelenz.de/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://lug-erkelenz.de/test/</link>
+      <pubDate>Tue, 02 Feb 2021 20:03:41 +0100</pubDate>
+      
+      <guid>https://lug-erkelenz.de/test/</guid>
+      <description>Hello Hallo ich bin Ruben
+Das ist Adam
+Cool
+Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf statischen HTML-Dateien basieren, will ich eine Einführung in den Static Site Generator “Hugo” geben. Static Site Generatoren gibt es mittlerweile wie Sand am Meer. Einen Überblick kann man sich beispielsweise auf der Seite staticgen.com verschaffen. Hugo gefällt mir im Hinblick auf Geschwindigkeit und Einfachkeit allerdings am besten. Hervorzuheben ist außerdem die besonders einfache Installation: Zur Einrichtung wird einfach die passende Programmdatei als Executable heruntergeladen.</description>
+    </item>
+    
     <item>
       <title>Test2</title>
       <link>https://lug-erkelenz.de/test2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lug-erkelenz.de/test2/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;hello&#34;&gt;Hello&lt;/h2&gt;
+&lt;p&gt;Hallo ich bin Ruben&lt;/p&gt;
+&lt;p&gt;Das ist Adam&lt;/p&gt;
+&lt;p&gt;Cool&lt;/p&gt;
+&lt;h2 id=&#34;test1&#34;&gt;Test1&lt;/h2&gt;</description>
     </item>
     
   </channel>
