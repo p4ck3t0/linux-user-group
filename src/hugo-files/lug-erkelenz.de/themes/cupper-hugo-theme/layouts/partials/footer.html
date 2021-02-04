@@ -1,12 +1,11 @@
 <footer role="contentinfo">
   <div>
+    Dark mode:
     <label for="themer">
-      {{ T "dark_theme" }} <input type="checkbox" id="themer" class="vh">
+      {{ T "dark_theme" }} <input type="checkbox" id="themer" class="vh" />
       <!-- Shows "on" or "off" -->
       <span aria-hidden="true"></span>
     </label>
   </div>
-  {{ with .Site.Params.footer }}
-    {{ . | markdownify }}
-  {{ end }}
+  {{ with .Site.Params.footer }} {{ . | markdownify }} {{ end }}
 </footer>
