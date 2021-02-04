@@ -38,10 +38,10 @@ menu:
       url: /
       weight: 1
     - name: Contact
-      url: /contact/
+      url: /contact
       weight: 2
     - name: About
-      url: /about-us/
+      url: /about
       weight: 3
     - name: Blog
       url: /post/

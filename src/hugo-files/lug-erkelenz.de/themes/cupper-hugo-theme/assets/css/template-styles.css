@@ -1052,3 +1052,7 @@ h1 svg {
   background: rgba(0, 0, 0, 0.8);
   color: #fefefe;
 }
+
+#contact-container {
+margin-top: 10%;
+}
