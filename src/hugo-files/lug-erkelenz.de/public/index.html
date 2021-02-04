@@ -320,17 +320,16 @@ Test1 Nachdem nun dieses Blog und die Microsite für meinen XMPP-Server auf stat
   const socket = new WebSocket("ws://192.168.178.37:4253");
 
   function sendMail() {
-    console.log("hehe");
-
     var userEmail = document.querySelector("#email").value;
     var userText = document.querySelector("#textfield").value;
-    
+
     var sendMailData = {
       email: email,
       text: userText,
     };
 
     socket.send(JSON.stringify(sendMailData));
+    document.getElementById("send-button").innerHTML = "Sent mail";
   }
 </script>
 

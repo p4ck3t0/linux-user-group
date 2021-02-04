@@ -2,7 +2,7 @@ const WebSocket = require("ws");
 const nodemailer = require("nodemailer");
 
 const wss = new WebSocket.Server({ port: 4253 }); //create websocket server; port: 4253
-console.log("started websocket server bin to port 4253");
+console.log("started websocket server bind to port 4253");
 
 wss.on("connection", (ws) => {
   ws.on("message", (message) => {
