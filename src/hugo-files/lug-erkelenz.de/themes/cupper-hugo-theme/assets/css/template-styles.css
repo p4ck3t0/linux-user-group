@@ -237,12 +237,12 @@ button {
 }
 
 #send-button {
-    font-size: 1.25rem;
-    font-family: inherit;
-    background: #111;
-    color: #fefefe;
-    border: 0;
-    width: 50%;    
+  font-size: 1.25rem;
+  font-family: inherit;
+  background: #111;
+  color: #fefefe;
+  border: 0;
+  width: 100%;
 }
 
 /* Forms */
